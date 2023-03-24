@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 08</title>
+    <title>Atividade 09</title>
 </head>
 <body>
     <script>
         x = parseInt(prompt("Digite o primeiro valor:"))
         y = parseInt(prompt("Digite o segundo valor:"))
-        document.write(`A adição entre ${x} e ${y} é ${x+y}.`)
-        document.write(`A subtração entre ${x} e ${y} é ${x-y}.`)
+        if(x < y){
+            alert("Erro. Encerrando programa.")
+        }else{
+            document.write(`A multiplicação entre ${x} e ${y} é igual a ${x*y}.<br>`)
+            document.write(`A divisão entre ${x} e ${y} é igual a ${x/y}.`)
+        }
+        
     </script>
     
 </body>
