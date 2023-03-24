@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07</title>
+</head>
+<body>
+    <script>         
+    nascimento()         
+    function nascimento(){                          
+        var a = prompt("Digite sua data de nascimento.")                          
+        b = a.split("/")                                          
+        var idade = 2023 - b[2]             
+        if(                 
+            b[1] > 03             
+            ){                 
+                idade --                              
+            }else if(                 
+                b[0] > 23             
+                ){                 
+                    idade --             
+                }             
+                document.write(`Você tem ${idade} anos.`)                   
+            }                                 
+    </script>     
+</body>
+</html>

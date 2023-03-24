@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+    <button name="data" type="button" onclick="nascimento()">Clique aqui para adicionar sua data de nascimento.</button>     
+    <script>         
+    function nascimento(){             
+        let a = prompt("Digite sua data de nascimento.")             
+        b = a.split("/")                             
+        document.write(`${b[2]}-${b[1]}-${b[0]}`)              
+    }                                    
+    </script>         
+</body>
+</html>
